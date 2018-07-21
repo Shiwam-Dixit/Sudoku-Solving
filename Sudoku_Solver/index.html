@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku_Solver</title>
+    <link rel="stylesheet" type="text/css" href="sudoku.css ">
+</head>
+<body>
+  <header>
+	    <ul class="fly-in-text hidden">
+	       <li>S</li>
+		   <li>U</li>
+		   <li>D</li>
+		   <li>O</li>
+		   <li>K</li>
+		   <li style="padding-right:25px;">U</li>
+		   <li>S</li>
+		   <li>O</li>
+		   <li>L</li>
+		   <li>V</li>
+		   <li>E</li>
+		   <li>R</li>
+    	</ul>
+  </header>
+<div id="container1">
+
+	<p style="text-align:center;">Fill values in boxes.</p>
+	<hr><hr>
+		
+           <input style="margin-left:23%;" id="0" value=""> 
+           <input style="margin-left:-.5%" id="1" value=""> 
+           <input style="margin-left:-.5%" id="2" value=""> 
+           <input style="margin-left:.1%;" id="3" value="">
+           <input style="margin-left:-.5%" id="4" value=""> 
+           <input style="margin-left:-.5%" id="5" value="">
+           <input style="margin-left:.1%;" id="6" value="">
+           <input style="margin-left:-.5%" id="7" value=""> 
+           <input style="margin-left:-.5%" id="8" value=""> 
+        <br>
+           <input style="margin-left:23%;" id="10" value="">  
+           <input style="margin-left:-.5%" id="11" value=""> 
+           <input style="margin-left:-.5%" id="12" value=""> 
+           <input style="margin-left:.1%;" id="13" value="">
+           <input style="margin-left:-.5%" id="14" value=""> 
+           <input style="margin-left:-.5%" id="15" value="">
+           <input style="margin-left:.1%;" id="16" value=""> 
+           <input style="margin-left:-.5%" id="17" value=""> 
+           <input style="margin-left:-.5%" id="18" value=""> 
+          
+       	<br>
+           <input style="margin-left:23%;" id="20" value=""> 
+           <input style="margin-left:-.5%" id="21" value=""> 
+           <input style="margin-left:-.5%" id="22" value=""> 
+           <input style="margin-left:.1%;" id="23" value="">
+           <input style="margin-left:-.5%" id="24" value=""> 
+           <input style="margin-left:-.5%" id="25" value="">
+           <input style="margin-left:.1%;" id="26" value=""> 
+           <input style="margin-left:-.5%" id="27" value=""> 
+           <input style="margin-left:-.5%" id="28" value=""> 
+          
+        <br>
+           <input style="margin-left:23%; margin-top:.5%;"   id="30" value="">  
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="31" value=""> 
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="32" value=""> 
+           <input style="margin-left:.1%; margin-top:.5%;"   id="33" value="">
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="34" value=""> 
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="35" value="">
+           <input style="margin-left:.1%; margin-top:.5%;"   id="36" value=""> 
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="37" value="">
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="38" value=""> 
+         
+       	<br>
+           <input style="margin-left:23%;" id="40" value="">  
+           <input style="margin-left:-.5%" id="41" value=""> 
+           <input style="margin-left:-.5%" id="42" value=""> 
+           <input style="margin-left:.1%;" id="43" value="">
+           <input style="margin-left:-.5%" id="44" value=""> 
+           <input style="margin-left:-.5%" id="45" value="">
+           <input style="margin-left:.1%;" id="46" value=""> 
+           <input style="margin-left:-.5%" id="47" value=""> 
+           <input style="margin-left:-.5%" id="48" value=""> 
+         
+        <br>
+           <input style="margin-left:23%;" id="50" value="">  
+           <input style="margin-left:-.5%" id="51" value=""> 
+           <input style="margin-left:-.5%" id="52" value=""> 
+           <input style="margin-left:.1%;" id="53" value="">
+           <input style="margin-left:-.5%" id="54" value=""> 
+           <input style="margin-left:-.5%" id="55" value="">
+           <input style="margin-left:.1%;" id="56" value=""> 
+           <input style="margin-left:-.5%" id="57" value=""> 
+           <input style="margin-left:-.5%" id="58" value=""> 
+         
+        <br>
+           <input style="margin-left:23%; margin-top:.5%;"   id="60" value="">  
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="61" value=""> 
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="62" value=""> 
+           <input style="margin-left:.1%; margin-top:.5%;"   id="63" value="">
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="64" value=""> 
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="65" value="">
+           <input style="margin-left:.1%; margin-top:.5%;"   id="66" value="">
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="67" value="">
+           <input style="margin-top:.5% ; margin-left:-.5%;" id="68" value=""> 
+         
+        <br>
+           <input style="margin-left:23%;" id="70" value="">  
+           <input style="margin-left:-.5%" id="71" value=""> 
+           <input style="margin-left:-.5%" id="72" value=""> 
+           <input style="margin-left:.1%;" id="73" value="">
+           <input style="margin-left:-.5%" id="74" value=""> 
+           <input style="margin-left:-.5%" id="75" value="">
+           <input style="margin-left:.1%;" id="76" value=""> 
+           <input style="margin-left:-.5%" id="77" value=""> 
+           <input style="margin-left:-.5%" id="78" value=""> 
+         
+        <br>
+           <input style="margin-left:23%;" id="80" value=""> 
+           <input style="margin-left:-.5%" id="81" value=""> 
+           <input style="margin-left:-.5%" id="82" value=""> 
+           <input style="margin-left:.1%;" id="83" value="">
+           <input style="margin-left:-.5%" id="84" value=""> 
+           <input style="margin-left:-.5%" id="85" value="">
+           <input style="margin-left:.1%;" id="86" value=""> 
+           <input style="margin-left:-.5%" id="87" value=""> 
+           <input style="margin-left:-.5%" id="88" value=""> 
+         
+	    <hr><hr><br>
+      <button type="submit" style="float:left" id="SolveBtn">Solve</button>
+      <button type="submit" style="float:right;" id="reset"><a href="sudoku.html">Reset</a></button>
+      
+</div>
+<div id="container2">
+
+	<h4 style="font-size:26px;">The Rules of Sudoku:</h4>
+	<ul>
+		<li>The classic Sudoku game involves a grid of 81 squares. </li><br>
+        <li>The grid is divided into nine blocks, each containing nine squares.</li><br>
+        <li>Each of the nine blocks( of Row , Column and 3*3 grid) has to contain all the numbers 1-9 </li><br>
+        <li> Each number can only appear once in a row, column or box.</li><br>
+        <li>Every puzzle has just one correct solution.</li>
+	</ul>
+		    
+</div>
+
+<script src="sudoku.js"></script>
+</body>
+</html>
